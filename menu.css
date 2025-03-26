@@ -18,7 +18,7 @@
 }
 
 .menu a:hover {
-    
+
     transform: scale(1.2);
 }
 
@@ -33,5 +33,5 @@
     color: #333;
     font-size: 18px;
     line-height: 1;
-    
+
 }

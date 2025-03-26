@@ -28,95 +28,103 @@
     <nav class="menu">
         <a href="index.html">Demo</a>
         <span class="separator">|</span>
-        <a href="api.html">API    <i class="fa-solid fa-code"></i></a>
+        <a href="api.html">API <i class="fa-solid fa-code"></i></a>
         <span class="separator">|</span>
-        <a href="working.html">Working  </a>
+        <a href="working.html">Working </a>
     </nav>
 
     <div class="menu-divider"></div>
 
     <div class="content">
-        <div class="container"> 
+        <div class="container">
             <h2> REST API Working</h2>
-           
-           
-
-           <p> <span style="color: rgb(87, 87, 87);">This project is a Node.js-based REST API that allows users to retrieve Quranic verses from a CSV file. It utilizes the Express.js framework for handling HTTP requests and enables cross-origin requests using CORS. The API reads verse data from a file named quran.csv, processes it, and returns the requested chapter and verse in JSON format. The project has been successfully deployed on Render, making it accessible online.</p>
-            
-           <div class="info">
-
-           <p><span style="color: rgb(26, 25, 25);">How It Works?</span><br><br>
-            <span style="color: rgb(26, 25, 25);"> Server Setup:</span><br>
-            The API is built using Express.js and runs on a specified port (3000 by default).<br>
-            It ensures that quran.csv exists before starting; otherwise, the server exits with an error.<br>
-            <br>
-            <span style="color: rgb(26, 25, 25);"> Handling Requests:</span><br>
-
-            The API provides a single endpoint:<br>
-
-            GET /quran/:chapter/:verse<br><br>
-            <span style="color: rgb(26, 25, 25);">The endpoint accepts:</span><br>
-
-chapter (integer) - The chapter number of the Quran.<br>
-
-verse (integer) - The verse number.<br>
-<br>
-<span style="color: rgb(26, 25, 25);">Data Processing:</span><br>
-
-When a request is made, the server reads quran.csv and searches for the requested chapter and verse.<br>
-<br>
-<span style="color: rgb(26, 25, 25);">The CSV file is assumed to have data formatted as:</span><br>
-
-id, arabic_text, chapter_number, chapter_name, verse_number, verse_text<br>
-The script extracts relevant data and formats the output.<br>
-<br>
-If verse=0, it returns the entire chapter.<br>
-<br>
-If the verse is found, the API returns a JSON response:<br>
-<br>
-{<br>
-    "chapter": "Al-Fatiha",<br>
-    "text": "In the name of Allah, the Most Gracious, the Most Merciful."<br>
-  }<br><br>
-  If the verse is not found, it returns:<br>
-  <br>
-  {<br>
-    "error": "Verse not found"<br>
-  }<br>
-  
-  <br>
-  <span style="color: rgb(26, 25, 25);"> Deployment on Render:</span><br>
-
-The API is hosted on Render, making it publicly accessible.<br>
-
-Render provides automatic deployments, meaning any updates pushed to the repository can be deployed seamlessly.<br>
-
-This ensures the API is available 24/7 with minimal maintenance.<br>
-<br>
-<span style="color: rgb(26, 25, 25);">Running the Server Locally:</span><br>
-The server listens on the specified port and logs a message when it starts:<br>
-Quran API is running on port 3000<br>
-
-<br>
-<span style="color: rgb(26, 25, 25);">Use Cases:</span><br>
-→Quranic applications that require dynamic verse retrieval.<br>
-
-→Islamic study tools to fetch Quranic references.<br>
-
-→Chatbots or voice assistants providing Quranic guidance.<br>
-
-→Integration into web or mobile apps for religious content.<br>
-
-→This project serves as a lightweight and efficient API for Quranic text retrieval, making it useful for developers working on Islamic applications. With deployment on Render, it is now accessible globally with ease.
 
 
 
-            </p>
-          
+            <p> <span style="color: rgb(87, 87, 87);">This project is a Node.js-based REST API that allows users to
+                    retrieve Quranic verses from a CSV file. It utilizes the Express.js framework for handling HTTP
+                    requests and enables cross-origin requests using CORS. The API reads verse data from a file named
+                    quran.csv, processes it, and returns the requested chapter and verse in JSON format. The project has
+                    been successfully deployed on Render, making it accessible online.</p>
+
+            <div class="info">
+
+                <p><span style="color: rgb(26, 25, 25);">How It Works?</span><br><br>
+                    <span style="color: rgb(26, 25, 25);"> Server Setup:</span><br>
+                    The API is built using Express.js and runs on a specified port (3000 by default).<br>
+                    It ensures that quran.csv exists before starting; otherwise, the server exits with an error.<br>
+                    <br>
+                    <span style="color: rgb(26, 25, 25);"> Handling Requests:</span><br>
+
+                    The API provides a single endpoint:<br>
+
+                    GET /quran/:chapter/:verse<br><br>
+                    <span style="color: rgb(26, 25, 25);">The endpoint accepts:</span><br>
+
+                    chapter (integer) - The chapter number of the Quran.<br>
+
+                    verse (integer) - The verse number.<br>
+                    <br>
+                    <span style="color: rgb(26, 25, 25);">Data Processing:</span><br>
+
+                    When a request is made, the server reads quran.csv and searches for the requested chapter and
+                    verse.<br>
+                    <br>
+                    <span style="color: rgb(26, 25, 25);">The CSV file is assumed to have data formatted as:</span><br>
+
+                    id, arabic_text, chapter_number, chapter_name, verse_number, verse_text<br>
+                    The script extracts relevant data and formats the output.<br>
+                    <br>
+                    If verse=0, it returns the entire chapter.<br>
+                    <br>
+                    If the verse is found, the API returns a JSON response:<br>
+                    <br>
+                    {<br>
+                    "chapter": "Al-Fatiha",<br>
+                    "text": "In the name of Allah, the Most Gracious, the Most Merciful."<br>
+                    }<br><br>
+                    If the verse is not found, it returns:<br>
+                    <br>
+                    {<br>
+                    "error": "Verse not found"<br>
+                    }<br>
+
+                    <br>
+                    <span style="color: rgb(26, 25, 25);"> Deployment on Render:</span><br>
+
+                    The API is hosted on Render, making it publicly accessible.<br>
+
+                    Render provides automatic deployments, meaning any updates pushed to the repository can be deployed
+                    seamlessly.<br>
+
+                    This ensures the API is available 24/7 with minimal maintenance.<br>
+                    <br>
+                    <span style="color: rgb(26, 25, 25);">Running the Server Locally:</span><br>
+                    The server listens on the specified port and logs a message when it starts:<br>
+                    Quran API is running on port 3000<br>
+
+                    <br>
+                    <span style="color: rgb(26, 25, 25);">Use Cases:</span><br>
+                    →Quranic applications that require dynamic verse retrieval.<br>
+
+                    →Islamic study tools to fetch Quranic references.<br>
+
+                    →Chatbots or voice assistants providing Quranic guidance.<br>
+
+                    →Integration into web or mobile apps for religious content.<br>
+
+                    →This project serves as a lightweight and efficient API for Quranic text retrieval, making it useful
+                    for developers working on Islamic applications. With deployment on Render, it is now accessible
+                    globally with ease.
+
+
+
+                </p>
+
+            </div>
+
+
         </div>
-       
-
-    </div>
 </body>
 
 
@@ -133,8 +141,8 @@ Quran API is running on port 3000<br>
         <div class="right_foot">
             <p>Github api <a href="https://github.com/ZahiqIbrahim/quran-api">repository.<i style="font-size:13px ;"
                         class="fa-solid fa-square-arrow-up-right"></i></a> </p>
-            <p>Github website <a href="">repository.<i style="font-size:13px ;"
-                        class="fa-solid fa-square-arrow-up-right"></i></a> </p>
+            <p>Github website <a href="https://github.com/ZahiqIbrahim/quran-api-website">repository.<i
+                        style="font-size:13px ;" class="fa-solid fa-square-arrow-up-right"></i></a> </p>
             <p>Developer : <a href="mailto:zahiqibrahimbhat@gmail.com">zahiqibrahimbhat@gmail.com<i
                         style="font-size:13px ;" class="fa-solid fa-square-arrow-up-right"></i></a> </p>
             <p><a

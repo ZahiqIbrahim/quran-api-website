@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,15 +12,15 @@ body {
 
 
 .content {
-    
+
     background-color: rgb(252, 253, 253);
     margin-top: 15px;
     text-align: center;
     width: 100%;
     border-radius: 10px;
-   
+
     padding: 30px;
-    
+
 }
 
 .heading {
@@ -91,34 +90,33 @@ button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 .start {
-    background-color: #e90400; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding for better size */
-    font-size: 16px; /* Font size */
-    border: none; /* Remove default border */
-   
-    cursor: pointer; /* Pointer cursor */
+    background-color: #e90400;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .start:hover {
-    background-color: #f77878; /* Darker green on hover */
+    background-color: #f77878;
 }
 
 .success {
-    background-color: #40d70e !important; /* Blue for success */
+    background-color: #40d70e !important;
 }
 
 .error {
-    background-color: #dc3545 !important; /* Red for failure */
+    background-color: #dc3545 !important;
 }
 
 #result {
     margin-top: 80px;
     font-size: 22px;
     font-weight: 500;
-    color: #2C3E50; 
+    color: #2C3E50;
     text-align: center;
     line-height: 1.8;
     font-family: "Georgia", serif;
