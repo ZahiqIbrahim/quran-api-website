@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/js/Index.js" defer></script>
+
+    <title>Demo</title>
+
+</head>
+
+<body>
+    <div class="heading">
+
+        <h1><span style="color: rgb(0, 0, 0);">Get</span> any Verse from the Holy Quran!</h1>
+
+    </div>
+
+    <nav class="menu">
+        <a href="/html/Index.html">Demo</a>
+        <span class="separator">|</span>
+        <a href="/html/api.html">API <i class="fa-solid fa-code"></i></a>
+        <span class="separator">|</span>
+        <a href="/html/working.html">Working </a>
+    </nav>
+
+    <div class="menu-divider"></div>
+
+    <div class="content"><h2 id="demo">Find <span style="color: #76797a">Any Verse</span></h2>
+        
+
+        <input type="number" id="chapter" placeholder="Chapter No" required>
+
+
+        <input type="number" id="verse" placeholder="Verse No" required>
+
+        <button onclick="fetchVerse()">Get Verse</button>
+        <button id="startButton" class="start" onclick="start()">Start Api</button>
+
+        <div id="result"></div>
+        <p>To get full chapter enter 0 in verse index.</p>
+        <p style="color: red; font-size: 15px;">Note: Starting the api after a period of inactivity might take few minutes.</p>
+
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="left_foot">
+            <h2>Effortless Quran API –<br> Access Divine Knowledge <br>Instantly!<h2>
+
+                    <p>"And We have certainly made the Quran easy for remembrance, <br>so is there any who will
+                        remember?" <br>
+                        Surah Al-Qamar (54:17)</p>
+        </div>
+        <div class="right_foot">
+            <p>Github api <a href="https://github.com/ZahiqIbrahim/quran-api">repository.<i style="font-size:13px ;"
+                        class="fa-solid fa-square-arrow-up-right"></i></a> </p>
+            <p>Github website <a href="">repository.<i style="font-size:13px ;"
+                        class="fa-solid fa-square-arrow-up-right"></i></a> </p>
+            <p>Developer : <a href="mailto:zahiqibrahimbhat@gmail.com">zahiqibrahimbhat@gmail.com<i
+                        style="font-size:13px ;" class="fa-solid fa-square-arrow-up-right"></i></a> </p>
+            <p><a
+                    href="https://www.linkedin.com/in/zahiq-ibrahim-414a23280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ZahiqIbrahim"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/zahiqibrahim_/"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+</html>

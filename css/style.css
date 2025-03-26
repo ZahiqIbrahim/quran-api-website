@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f3f3;
+    height: 100vh;
+}
+
+
+
+.content {
+    
+    background-color: rgb(252, 253, 253);
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+   
+    padding: 30px;
+    
+}
+
+.heading {
+    width: 100vw;
+    background: rgb(252, 253, 253);
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.heading h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #76797a;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgb(252, 253, 253);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+input {
+    border: 1px solid #d1d1d1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 150px;
+    background-color: #fcfdfd;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-left: 5px;
+}
+
+input:focus {
+    border-color: #7a7a7a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button {
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 150px;
+    background-color: #259d7d;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #60ccaf;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #60ccaf;
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.start {
+    background-color: #e90400; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for better size */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove default border */
+   
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+.start:hover {
+    background-color: #f77878; /* Darker green on hover */
+}
+
+.success {
+    background-color: #40d70e !important; /* Blue for success */
+}
+
+.error {
+    background-color: #dc3545 !important; /* Red for failure */
+}
+
+#result {
+    margin-top: 80px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2C3E50; 
+    text-align: center;
+    line-height: 1.8;
+    font-family: "Georgia", serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
